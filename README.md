@@ -58,7 +58,7 @@ npm test
 
 ![Demo](./client/public/hangman.gif)
 
-## Contact Information
+## Contact Me
 
 If you would like to collaborate on a project, have any questions, or simply want to connect, feel free to reach out to me.
 
