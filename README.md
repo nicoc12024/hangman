@@ -1,27 +1,66 @@
-# React + TypeScript + Vite
+# Frontend Hangman Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The classical game of Hangman built with React and TypeScript.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- TypeScript
+- Vite
+- CSS Modules
+- Inline CSS
+- Jest
+- React Testing Library
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Simple and intuitive UI for playing Hangman.
+- Random word generation.
+- Keyboard support for guessing letters.
+- Visual representation of incorrect guesses.
+- Visual representation of the Hangman.
+- Visual representation of the word to guess after losing.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation and Setup
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nicoc12024/hangman.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd hangman
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the Vite development server:
+   ```bash
+   npm run dev
+   ```
+
+## Testing
+
+Run the test suite using Jest and React Testing Library:
+
+```bash
+npm test
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Quick Overview
+
+![Demo](./client/public/hangman.gif)
+
+## Contact Information
+
+If you would like to collaborate on a project, have any questions, or simply want to connect, feel free to reach out to me.
+
+- Email: [nicoc12024@gmail.com](mailto:nicoc12024@gmail.com)
+- LinkedIn: [https://www.linkedin.com/in/nicocabello](https://www.linkedin.com/in/nicocabello)

@@ -1,5 +1,6 @@
 const HEAD = (
   <div
+    data-testid="head"
     style={{
       width: "50px",
       height: "50px",
@@ -14,6 +15,7 @@ const HEAD = (
 
 const BODY = (
   <div
+    data-testid="body"
     style={{
       width: "10px",
       height: "100px",
@@ -27,6 +29,7 @@ const BODY = (
 
 const RIGHT_ARM = (
   <div
+    data-testid="right-arm"
     style={{
       width: "100px",
       height: "10px",
@@ -42,6 +45,7 @@ const RIGHT_ARM = (
 
 const LEFT_ARM = (
   <div
+    data-testid="left-arm"
     style={{
       width: "100px",
       height: "10px",
@@ -57,6 +61,7 @@ const LEFT_ARM = (
 
 const RIGHT_LEG = (
   <div
+    data-testid="right-leg"
     style={{
       width: "100px",
       height: "10px",
@@ -72,6 +77,7 @@ const RIGHT_LEG = (
 
 const LEFT_LEG = (
   <div
+    data-testid="left-leg"
     style={{
       width: "100px",
       height: "10px",
@@ -94,7 +100,9 @@ type HangmanDrawingProps = {
 export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
   return (
     <div style={{ position: "relative" }}>
-      {BODY_PARTS.slice(0, numberOfGuesses)}
+      {BODY_PARTS.slice(0, numberOfGuesses).map((Part, index) => {
+        return <div key={index}>{Part}</div>;
+      })}{" "}
       {/* Short vertical bar that grabs the head */}
       <div
         style={{
