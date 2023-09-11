@@ -56,7 +56,7 @@ npm test
 
 ## Quick Overview
 
-![Demo](./client/public/hangman.gif)
+![Demo](./public/hangman.gif)
 
 ## Contact Me
 
